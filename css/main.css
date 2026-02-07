@@ -1,0 +1,312 @@
+/* Wikipedia Authentic Style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Lato, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #202122;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top Navigation Bar */
+body > b:first-of-type {
+    display: block;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #a7d7f9;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* Search and Navigation Links */
+input[type="text"] {
+    padding: 6px 10px;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px;
+    width: 200px;
+    font-size: 13px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+button {
+    padding: 6px 12px;
+    background-color: #f8f9fa;
+    color: #202122;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+button:hover {
+    background-color: #ffffff;
+    border-color: #72777d;
+}
+
+a {
+    color: #0645ad;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #0b0080;
+}
+
+/* Main Content Container */
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Article Title */
+h1 {
+    font-family: "Linux Libertine", Georgia, Times, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 1.3;
+    margin: 16px 0 8px 0;
+    padding: 0;
+    border: none;
+    color: #000000;
+}
+
+/* Subtitle and disambiguation */
+body > hr:first-of-type {
+    display: none;
+}
+
+body > p:nth-of-type(1) {
+    font-size: 12px;
+    color: #54595d;
+    margin: 4px 0;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 8px;
+}
+
+body > p:nth-of-type(2) {
+    font-size: 12px;
+    font-style: italic;
+    color: #54595d;
+    margin: 8px 0;
+}
+
+/* Main Article Text */
+body > p:nth-of-type(3) {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 16px 0;
+    text-align: justify;
+    color: #202122;
+}
+
+body > p b {
+    font-weight: bold;
+}
+
+sup {
+    font-size: 11px;
+    line-height: 1;
+}
+
+sup a {
+    margin: 0;
+}
+
+/* Sidebar Infobox */
+body {
+    position: relative;
+}
+
+/* We'll create a visual separation for the sidebar content */
+body > br:nth-of-type(1) ~ * {
+    background-color: #f8f9fa;
+}
+
+/* Appearance Section (Sidebar) */
+b {
+    font-weight: 600;
+    font-size: 13px;
+    display: block;
+    margin: 12px 0 8px 0;
+    color: #202122;
+}
+
+/* Radio Buttons */
+input[type="radio"] {
+    margin: 4px 8px 4px 0;
+    vertical-align: middle;
+}
+
+input[type="radio"] + text {
+    font-size: 13px;
+}
+
+/* Table of Contents */
+ul {
+    list-style: decimal;
+    margin: 16px 0;
+    padding-left: 40px;
+}
+
+ul li {
+    margin: 4px 0;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+ul li a {
+    margin: 0;
+    color: #0645ad;
+}
+
+/* Infobox styling - Images and Flag */
+img[alt="Flag_of_Azerbaijan"],
+img[alt="Gerb"] {
+    border: 1px solid #a2a9b1;
+    padding: 0;
+    margin: 5px;
+    background-color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Audio Player */
+audio {
+    width: 100%;
+    max-width: 250px;
+    margin: 10px 0;
+}
+
+/* Map Image */
+img[alt="xerite"] {
+    border: 1px solid #a2a9b1;
+    background-color: #ffffff;
+    padding: 3px;
+}
+
+/* See Also Section */
+hr {
+    border: none;
+    border-top: 1px solid #a2a9b1;
+    margin: 24px 0 16px 0;
+}
+
+/* Portal Links with Icons */
+img[alt="flag"],
+img[alt="zemlya1"],
+img[alt="zemlya"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 8px 0 0;
+    border: 1px solid #a2a9b1;
+}
+
+/* Footer */
+body > span {
+    display: block;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #a2a9b1;
+    font-size: 11px;
+    color: #54595d;
+    line-height: 1.4;
+}
+
+table {
+    display: inline-block;
+    border: none;
+    margin: 10px 10px 0 0;
+    vertical-align: top;
+}
+
+table img {
+    display: block;
+    margin: 0;
+}
+
+/* Make it look more like Wikipedia's layout */
+@media screen and (min-width: 768px) {
+    body {
+        padding: 20px 40px;
+        background-color: #f8f9fa;
+    }
+    
+    /* Create content wrapper appearance */
+    h1 {
+        background-color: #ffffff;
+        padding: 16px 20px 8px 20px;
+        margin: 0 -20px 0 -20px;
+    }
+    
+    body > p,
+    body > ul,
+    body > hr,
+    body > b {
+        background-color: #ffffff;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+/* Wikipedia Blue Link Color */
+a:link {
+    color: #0645ad;
+}
+
+a:visited {
+    color: #0b0080;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Contents Box Styling */
+b:contains("Contents") {
+    background-color: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    padding: 8px 12px;
+    margin: 16px 0;
+}
+
+/* Typography refinements */
+p {
+    margin: 0.5em 0 1em 0;
+}
+
+/* Last edited footer text */
+body > br:last-of-type ~ text,
+body > text:last-of-type {
+    display: block;
+    font-size: 11px;
+    color: #72777d;
+    margin-top: 20px;
+    line-height: 1.5;
+}
